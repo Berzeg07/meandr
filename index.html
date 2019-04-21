@@ -95,37 +95,52 @@
 	<footer class="footer">
 		<h2 class="main-title">Теперь расскажите о себе</h2>
 		<div class="footer-item">
-			<form action="#" method="post">
+			<form class="form" action="#" method="post">
 				<ol class="formList">
 					<li>
 						<label class="formList-label">
 							<p>Фамилия и имя</p>
-							<input type="text" name="" placeholder="Сидоров Александр">
+							<input class="formInp" type="text" name="uname" placeholder="Сидоров Александр">
+							<span class="formError">Поле не может быть пустым</span>
 						</label>
 					</li>
 					<li>
 						<label class="formList-label">
 							<p>Электронная почта</p>
-							<input type="text" name="" placeholder="Sidorov@yandex.ru">
+							<input class="formInp" id="email" type="text" name="email" placeholder="Sidorov@yandex.ru">
+							<span class="formError">Поле не может быть пустым</span>
+							<span class="emailError">Введите правильный формат email</span>
 						</label>
 					</li>
 					<li>
 						<label class="formList-label">
 							<p>Телефон</p>
-							<input class="phone-mask" type="text" name="" placeholder="+7 (999)-328-14-20">
+							<input class="formInp phone-mask" type="text" name="phone" placeholder="+7 (999)-328-14-20">
+							<span class="formError">Поле не может быть пустым</span>
 						</label>
 					</li>
 					<li>
 						<label class="formList-label">
 							<p>Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</p>
-							<textarea name="name" placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></textarea>
+							<textarea class="formInp" name="text" placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></textarea>
+							<span class="formError">Поле не может быть пустым</span>
 						</label>
 					</li>
 				</ol>
 				<button class="formList-btn" type="submit">Отправить</button>
+				<span class="formErrorMain">Заполните пожалуйста все поля</span>
 			</form>
 		</div>
 	</footer>
+
+	<div class="form-thanks">
+		<div class="form-thanks_inner">
+			<div class="form-thanks_close">X</div>
+			<p>Ваша заявка принята</p>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
 
 
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
