@@ -584,6 +584,7 @@ textarea {
 
         &:after {
             border: none;
+            counter-increment: unset;
             content: '';
             background: red;
             z-index: 1;
